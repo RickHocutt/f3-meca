@@ -1,0 +1,57 @@
+#header-menu {
+  @apply list-none m-0 pl-0 flex p-0;
+}
+
+#header-menu li {
+  @apply list-none block relative m-0;
+  transition-duration: 0.5s;
+}
+
+#header-menu li a {
+  @apply text-black dark:text-white whitespace-nowrap p-4 block;
+}
+
+#header-menu li:hover a,
+#header-menu li:focus-within a {
+  @apply bg-black dark:bg-white text-white dark:text-black cursor-pointer;
+}
+
+#header-menu li:focus-within a {
+  @apply outline-none;
+}
+
+#header-menu li.menu-item-has-children > a:after {
+  @apply ml-1;
+  content: '▼';
+}
+
+#header-menu li.menu-item-has-children:hover > a:after {
+  content: '▲';
+}
+
+#header-menu li ul {
+  @apply absolute hidden mt-4 left-0 opacity-0;
+  min-width: 5rem;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  z-index: 999;
+}
+
+#header-menu li:hover > ul,
+#header-menu li:focus-within > ul,
+#header-menu li ul:hover,
+#header-menu li ul:focus {
+  @apply block opacity-100 visible my-0;
+}
+
+#header-menu li ul li:hover a {
+  @apply bg-gray-200 text-black;
+}
+
+#header-menu li ul li {
+  @apply bg-black clear-both w-full;
+}
+
+#header-menu li ul li a {
+  @apply text-white;
+}
