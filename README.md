@@ -10,9 +10,9 @@ Follow steps outlined here [https://www.youtube.com/watch?v=OP9ZxbqNe38](https:/
 - Run npm install
 - Run npm start OR npm run preview to startup local environment
 
-## Additional steps taken to customeize theme
+## Additional steps taken to customize theme
 
-Installed NPM package "postcss-import" in order to add better import support for partial files.
+Installed NPM package "postcss-import" in order to chunk CSS into partial files.
 
 Created additonal CSS files and imported into index.css
 - typography.css

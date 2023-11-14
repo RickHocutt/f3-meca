@@ -1,4 +1,11 @@
 module.exports = {
   content: ["./**/*.php", "./src/**/*.js"],
-  plugins: []
+  safelist: [
+    'button',
+    'leadin'
+  ],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
+  darkMode: 'media'
 }

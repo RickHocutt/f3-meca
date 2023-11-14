@@ -1,0 +1,9 @@
+/* Table Styles */
+
+.google-visualization-table-table, table {
+  @apply w-full;
+}
+
+td, th, .google-visualization-table-table td, .google-visualization-table-table th {
+  @apply dark:bg-black;
+}

@@ -1,14 +1,7 @@
 <?php
-
 get_header(); ?>
 
-<div class="max-w-4xl mx-auto px-4">
-
-  <!-- example react component -->
-  <div id="render-react-example-here"></div>
-  <!-- end example react component -->
-
-  <div class="mb-5 prose prose-lg dark:prose-invert">
+  <div class="prose prose-lg dark:prose-invert px-8">
     <?php if (have_posts()) {
       while(have_posts()) {
         the_post(); ?>
@@ -19,6 +12,5 @@ get_header(); ?>
       <?php }
     } ?>
   </div>
-</div>
 
 <?php get_footer();

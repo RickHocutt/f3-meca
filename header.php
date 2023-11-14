@@ -7,7 +7,7 @@
   </head>
 
   <body <?php body_class('bg-white md:text-lg dark:bg-black dark:text-white'); ?>>
-    <div class="max-w-4xl mx-auto p-5">
+    <div class="p-5 flex gap-8 justify-between items-center flex-wrap">
       <div class="flex items-center my-4">
         <h1 class="p-0 m-0 mr-4"><a href="<?php echo get_home_url(); ?>">
           <svg class="fill-black dark:fill-white" width="159" height="56" viewBox="0 0 159 56" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@
           </svg>
         </a></h1>
 
-        <p>Official Website for the MeCa Region fo F3 Nation</p>
+        <p class="text-neutral-500 dark:text-neutral-400">Official Website for the MeCa Region of F3 Nation</p>
       </div>
 
       <nav>
